@@ -19,3 +19,27 @@
 }
 
 /* ------------------------------ */
+:root {
+  --text-color: black;
+  --link-color: blue;
+  --button-bg: white;
+}
+
+.example {
+  color: var(--text-color);
+}
+
+.example a {
+  color: var(--link-color);
+}
+
+.example button {
+  background-color: var(--button-bg);
+}
+
+.dark-mode {
+  --bg-color: black;
+  --text-color: white;
+  --link-color: yellow;
+  --button-bg: orange;
+}
