@@ -5,6 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Registrační formulář</title>
+
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
     <!--     Vytvoř registrační formulář na workshop Czechitas.
@@ -22,32 +24,27 @@
     Adresa pro odeslání formuláře a zobrazení odeslaných dat: "http://formular.itgirls.cz/" 
     
     BONUS: Formulář pěkně nastyluj. -->
+    <kontejner class="formular">
+      <label for="jmeno-prijmeni">Jmeno a přijmeni:</label>
+      <input type="text" name="jmeno" id="jmeno-prijmeni" autocomplete="off" />
 
-    <label for="jmeno-prijmeni">Jmeno Přijmeni:</label>
-    <input type="text" name="jmeno" id="jmeno-prijmeni" autocomplete="off" />
+      <label for="datum">Datum narození:</label>
+      <input type="date" name="datum" id="datum" />
 
-    <label for="datum">Datum narození:</label>
-    <input type="date" name="datum" id="datum" />
+      <label for="email">Email</label>
+      <input type="email" name="email" id="email" />
 
-    <label for="email">Email</label>
-    <input type="email" name="email" id="email" />
+      <lable for="telefon">Telefon</lable>
+      <input type="telefon" name="telefon" id="telefon" />
 
-    <lable for="telefon">Telefon</lable>
-    <input type="telefon" name="telefon" id="telefon" />
+      <label for="heslo">Heslo</label>
+      <input type="password" name="heslo" id="heslo" />
 
-    <label for="heslo">Heslo</label>
-    <input type="password" name="heslo" id="heslo" />
+      <label for="zprava">Prostor pro zprávu</label>
+      <textarea name="zprava" id="zprava" cols="30" rows="10"></textarea>
 
-    <label for="operacni-system">Možnos výběru operačního systému</label>
-    <select name="operacni-system">
-      <option value="mac">Mac OS</option>
-      <option value="win">Windows</option>
-    </select>
-
-    <label for="zprava">Prostor pro zprávu</label>
-    <textarea name="zprava" id="zprava" cols="30" rows="10"></textarea>
-
-    <label for="souhlas">Souhlas se zpracováním osobních údajů</label>
-    <input type="checkbox" name="souhlas" id="souhlas" value="souhlasim" />
+      <label for="souhlas">Souhlas se zpracováním osobních údajů</label>
+      <input type="checkbox" name="souhlas" id="souhlas" value="souhlasim" />
+    </kontejner>
   </body>
 </html>

@@ -1,0 +1,11 @@
+.formular {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+label,
+input,
+textarea {
+  padding: 10px;
+}
